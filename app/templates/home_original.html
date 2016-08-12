@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbo">
+		<h2>Welcome to the Yost Olympics!</h2>
+		<h3>This is the home page for the Yost Olympics Scores</h3>
+	</div>
+	{% for player in players %}
+		{{player['name']}}: {{ player['Score'] }},
+	{% endfor %}
+{% endblock %}

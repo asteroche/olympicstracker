@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbo">
+		<h2>Welcome to the Yost Olympics!</h2>
+		<h3>This is the home page for the Yost Olympics Scores</h3>
+		<table>
+			<thead>
+				<tr>
+					<td>Player</td>
+					<td>Gold Team</td>
+					<td>Silver Team</td>
+					<td>Bronze Team</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for player in players %}
+					<tr>
+						<td>{{player['name']}}</td>
+						<td>{{player['Golds']}}</td>
+						<td>{{player['Silvers']}}</td>
+						<td>{{player['Bronzes']}}</td>
+						<td>{{player['Score']}}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	
+
+{% endblock %}

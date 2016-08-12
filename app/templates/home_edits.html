@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbo">
+		<h2>Welcome to the Yost Olympics!</h2>
+		<h3>This is the home page for the Yost Olympics Scores</h3>
+		<table>
+			<thead>
+				<tr>
+					<td>Player</td>
+					<td>Gold</td>
+					<td>Silver</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for player in players %}
+					{<td>{player['name']}</td>} {<td>{ player['Score'] }</td>},
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	
+
+{% endblock %}
