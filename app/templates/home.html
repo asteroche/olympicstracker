@@ -16,11 +16,26 @@
 			<tbody>
 				{% for player in players %}
 					<tr>
-						<td>{{player['name']}}</td>
-						<td>{{player['Golds']}}</td>
-						<td>{{player['Silvers']}}</td>
-						<td>{{player['Bronzes']}}</td>
-						<td>{{player['Score']}}</td>
+						<td>
+							{{player['name']}}
+						</td>
+						<td>
+							{{player['Goldscore']}}:
+							{{player['Golds']}}
+							
+						</td>
+						<td>
+							{{player['Silverscore']}}:
+							{{player['Silvers']}}
+						</td>
+						<td>
+							{{player['Bronzescore']}}:
+							{{player['Bronzes']}}
+							
+						</td>
+						<td>
+							{{player['Score']}}
+						</td>
 					</tr>
 				{% endfor %}
 			</tbody>
