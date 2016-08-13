@@ -13,4 +13,4 @@ def about():
 	return render_template('about.html')
 
 if __name__ == '__main__':
-	app.run(debug=False,port=4997)
+	app.run(debug=False,port=4997,host='0.0.0.0')
