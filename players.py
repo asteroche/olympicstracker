@@ -7,7 +7,7 @@ players = [
 		{'name': 'Anna', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Spain', 'Silvers':'Ethiopia', 'Bronzes':'Czech Republic', 'Score':0},
 		{'name': 'Nelson', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'North Korea', 'Silvers':'Poland', 'Bronzes':'Canada', 'Score':0},
 		{'name': 'Daniel', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Netherlands', 'Silvers':'Azerbaijan', 'Bronzes':'Romania', 'Score':0},
-		{'name': 'Nick', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Ukraine', 'Silvers':'Belarus', 'Bronzes':'Danmark', 'Score':0}, 
+		{'name': 'Nick', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Ukraine', 'Silvers':'Belarus', 'Bronzes':'Denmark', 'Score':0}, 
 		{'name': 'Matt', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'New Zealand', 'Silvers':'Cuba', 'Bronzes':'Mexico', 'Score':0},
 		{'name': 'Jess', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Hungary', 'Silvers':'Jamaica', 'Bronzes':'Sweden', 'Score':0},
 		{'name': 'James', 'Goldscore':0, 'Silverscore':0, 'Bronzescore':0, 'Golds':'Iran', 'Silvers':'Kenya', 'Bronzes':'Ireland', 'Score':0}]
@@ -33,3 +33,4 @@ def updateScore():
 		player['Bronzescore']=bronzeScore
 ##have kyle explain this later
 		player['Score'] = goldScore + silverScore + bronzeScore
+	players.sort(key=lambda k: k['Score'], reverse=True)
